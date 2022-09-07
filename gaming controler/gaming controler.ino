@@ -9,3 +9,24 @@ void setup() {
   pinMode(switch_pin, INPUT);
   pinMode(switch_pin, INPUT);
   Serial.begin(115200);
+}
+void loop() {
+  Serial.print("Switch:  ");
+  Serial.print(digitalRead(switch_pin));
+  Serial.print("\n");
+  Serial.print("X-axis1: ");
+  Serial.print(analogRead(x_pin));
+  Serial.print("\n");
+  Serial.print("X-axis2: ");
+  Serial.print(analogRead(x_pin2));
+  Serial.print("\n");
+  Serial.print("Y-axis1: ");
+  Serial.print(analogRead(y_pin));
+  Serial.print("\n");
+  Serial.print("Y-axis2: ");
+  Serial.print(analogRead(y_pin2));
+  Serial.print("\n");
+  delay(50);
+
+
+
